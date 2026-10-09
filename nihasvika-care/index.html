@@ -9,7 +9,6 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Nihasvika Care Service | Caregivers in Hyderabad">
   <meta property="og:description" content="Caring for your loved ones, when you can't be there. Trusted hospital attendants and elderly care support across Hyderabad.">
-  <meta property="og:image" content="images/hero.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -127,17 +126,9 @@
     /* ---------- Icons ---------- */
     .icon { width: 28px; height: 28px; stroke: var(--sage); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex: none; }
 
-    /* ---------- Photos (gradient shows until a real photo loads) ---------- */
-    .photo {
-      position: relative; overflow: hidden;
-      border-radius: var(--radius);
-      background:
-        radial-gradient(120% 90% at 15% 20%, rgba(217, 154, 126, .45), transparent 60%),
-        radial-gradient(110% 100% at 90% 85%, rgba(122, 158, 135, .55), transparent 60%),
-        linear-gradient(160deg, #F3ECE3, #E4ECE6);
-    }
-    .photo > svg { position: absolute; inset: 0; margin: auto; width: 22%; max-width: 120px; stroke: rgba(76, 112, 91, .55); fill: none; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
-    .photo img { position: relative; width: 100%; height: 100%; object-fit: cover; }
+    /* ---------- Illustrations ---------- */
+    .photo { overflow: hidden; border-radius: var(--radius); background: var(--surface); }
+    .photo .art { display: block; width: 100%; height: 100%; }
 
     /* ---------- Navigation ---------- */
     .nav {
@@ -371,8 +362,83 @@
           <a href="#services" class="btn btn-secondary">Our Services</a>
         </div>
         <div class="photo hero-photo reveal d3">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-hands"/></svg>
-          <img src="images/hero.jpg" alt="A caregiver gently holding the hand of an elderly woman at home" width="1600" height="900" fetchpriority="high" onerror="this.remove()">
+          <svg class="art" role="img" aria-label="Illustration of a caregiver kneeling beside an elderly woman in her armchair, gently holding her hands" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="h-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6EFE6"/><stop offset="1" stop-color="#EFE5D9"/></linearGradient>
+    <linearGradient id="h-floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6D9CA"/><stop offset="1" stop-color="#EDE3D7"/></linearGradient>
+    <linearGradient id="h-beam" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF8EE" stop-opacity=".9"/><stop offset="1" stop-color="#FFF8EE" stop-opacity="0"/></linearGradient>
+    <radialGradient id="h-glow" cx=".3" cy=".25" r=".7"><stop offset="0" stop-color="#FBE3D3" stop-opacity=".9"/><stop offset="1" stop-color="#FBE3D3" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#h-wall)"/>
+  <rect width="1600" height="900" fill="url(#h-glow)"/>
+  <rect y="690" width="1600" height="210" fill="url(#h-floor)"/>
+  <rect y="686" width="1600" height="6" fill="#E2D4C3"/>
+  <!-- window -->
+  <rect x="190" y="130" width="330" height="430" rx="14" fill="#F2E9DE"/>
+  <rect x="210" y="150" width="290" height="390" rx="6" fill="#E3ECE5"/>
+  <rect x="210" y="150" width="290" height="390" rx="6" fill="url(#h-glow)"/>
+  <rect x="350" y="150" width="10" height="390" fill="#F2E9DE"/>
+  <rect x="210" y="340" width="290" height="10" fill="#F2E9DE"/>
+  <rect x="176" y="556" width="358" height="16" rx="6" fill="#E8DCCD"/>
+  <path d="M210 150 L500 150 L700 900 L250 900 Z" fill="url(#h-beam)" opacity=".45"/>
+  <!-- rug -->
+  <ellipse cx="860" cy="780" rx="460" ry="58" fill="#E9CDBD" opacity=".7"/>
+  <!-- plant -->
+  <g transform="translate(1300 0)">
+    <path d="M-40 600 h120 l-14 110 h-92 z" fill="#D99A7E"/>
+    <path d="M20 600 C 10 520, -60 470, -110 430" stroke="#6B8F78" stroke-width="5" fill="none"/>
+    <path d="M20 600 C 30 500, 80 440, 130 400" stroke="#6B8F78" stroke-width="5" fill="none"/>
+    <path d="M20 600 C 20 500, 10 420, 20 340" stroke="#6B8F78" stroke-width="5" fill="none"/>
+    <ellipse cx="-100" cy="430" rx="60" ry="24" transform="rotate(25 -100 430)" fill="#7A9E87"/>
+    <ellipse cx="-40" cy="500" rx="54" ry="20" transform="rotate(35 -40 500)" fill="#8FB09A"/>
+    <ellipse cx="120" cy="400" rx="62" ry="24" transform="rotate(-30 120 400)" fill="#7A9E87"/>
+    <ellipse cx="80" cy="480" rx="52" ry="20" transform="rotate(-35 80 480)" fill="#8FB09A"/>
+    <ellipse cx="20" cy="340" rx="24" ry="64" fill="#6B8F78"/>
+    <ellipse cx="-20" cy="410" rx="22" ry="56" transform="rotate(-25 -20 410)" fill="#8FB09A"/>
+  </g>
+  <!-- side table with tea -->
+  <rect x="1090" y="560" width="130" height="14" rx="7" fill="#C9B29C"/>
+  <rect x="1104" y="574" width="10" height="120" fill="#C9B29C"/><rect x="1196" y="574" width="10" height="120" fill="#C9B29C"/>
+  <path d="M1132 526 h46 v26 a10 10 0 0 1 -10 10 h-26 a10 10 0 0 1 -10 -10 z" fill="#FFFFFF"/>
+  <path d="M1178 532 a10 10 0 0 1 0 18" stroke="#FFFFFF" stroke-width="5" fill="none"/>
+  <path d="M1146 510 c -8 -12 8 -16 0 -28 M1162 510 c -8 -12 8 -16 0 -28" stroke="#D9C6B4" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- armchair -->
+  <rect x="560" y="330" width="300" height="330" rx="70" fill="#7A9E87"/>
+  <rect x="520" y="520" width="380" height="150" rx="40" fill="#6B8F78"/>
+  <rect x="520" y="470" width="90" height="200" rx="40" fill="#86A892"/>
+  <rect x="592" y="666" width="16" height="40" rx="6" fill="#B79A80"/><rect x="820" y="666" width="16" height="40" rx="6" fill="#B79A80"/>
+  <!-- elderly woman, seated, facing right -->
+  <path d="M690 590 L 868 590" stroke="#B9A58F" stroke-width="56" stroke-linecap="round" fill="none"/>
+  <path d="M868 596 L 872 690" stroke="#B9A58F" stroke-width="44" stroke-linecap="round" fill="none"/>
+  <path d="M852 692 h62 a18 18 0 0 1 18 18 v4 h-80 z" fill="#5B665F"/>
+  <path d="M640 590 Q 630 440 690 400 Q 730 380 770 400 Q 820 430 820 520 L 830 600 Z" fill="#F7F0E6"/>
+  <path d="M672 410 Q 740 380 800 430 L 760 560 L 660 560 Z" fill="#E7C9B6" opacity=".55"/>
+  <rect x="728" y="360" width="26" height="40" rx="10" fill="#E0B293"/>
+  <circle cx="742" cy="320" r="54" fill="#E0B293"/>
+  <path d="M690 318 Q 688 262 744 262 Q 796 264 798 304 Q 770 286 742 296 Q 712 306 706 340 Q 694 338 690 318 Z" fill="#E4E1DA"/>
+  <circle cx="694" cy="282" r="26" fill="#E4E1DA"/>
+  <circle cx="774" cy="334" r="4" fill="#C98F72" opacity=".6"/>
+  <!-- woman's arm reaching forward -->
+  <path d="M770 430 Q 820 470 860 510 L 900 520" stroke="#F7F0E6" stroke-width="38" fill="none" stroke-linecap="round"/>
+  <!-- caregiver, kneeling, facing left -->
+  <path d="M1056 630 L 1060 688 L 1130 690" stroke="#4C705B" stroke-width="42" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M1040 630 L 972 628 L 968 690" stroke="#56796A" stroke-width="44" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M944 692 h50 a14 14 0 0 1 14 14 v4 h-64 z" fill="#2F3A34"/>
+  <path d="M990 640 Q 970 520 1010 470 Q 1040 440 1080 460 Q 1110 490 1100 560 L 1080 640 Z" fill="#D99A7E"/>
+  <rect x="1026" y="420" width="24" height="40" rx="10" fill="#B9805F"/>
+  <circle cx="1034" cy="390" r="48" fill="#B9805F"/>
+  <path d="M1080 396 Q 1088 340 1036 336 Q 990 336 984 370 Q 1010 356 1040 364 Q 1064 372 1066 400 Q 1076 404 1080 396 Z" fill="#2F3A34"/>
+  <circle cx="1088" cy="362" r="22" fill="#2F3A34"/>
+  <circle cx="1002" cy="404" r="4" fill="#9E6A4E" opacity=".6"/>
+  <!-- caregiver's arms -->
+  <path d="M1020 500 Q 980 540 930 528" stroke="#D99A7E" stroke-width="34" fill="none" stroke-linecap="round"/>
+  <path d="M1060 520 Q 1000 590 940 560" stroke="#C88A6E" stroke-width="32" fill="none" stroke-linecap="round"/>
+  <!-- joined hands -->
+  <ellipse cx="906" cy="522" rx="26" ry="18" fill="#E0B293"/>
+  <ellipse cx="926" cy="540" rx="28" ry="18" transform="rotate(-15 926 540)" fill="#B9805F"/>
+  <ellipse cx="918" cy="512" rx="24" ry="15" transform="rotate(10 918 512)" fill="#B9805F"/>
+  <ellipse cx="900" cy="528" rx="16" ry="11" fill="#E0B293"/>
+</svg>
         </div>
       </div>
     </section>
@@ -464,8 +530,77 @@
     <section class="section" aria-labelledby="why-title">
       <div class="wrap why">
         <div class="photo why-photo reveal">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"/></svg>
-          <img src="images/care.jpg" alt="An attendant walking alongside an elderly man in a hospital corridor" width="1000" height="1250" loading="lazy" onerror="this.remove()">
+          <svg class="art" role="img" aria-label="Illustration of an attendant walking arm in arm with an elderly man down a hospital corridor" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="w-end" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF6EC"/><stop offset="1" stop-color="#F6E4D6"/></linearGradient>
+    <linearGradient id="w-floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E5ECE6"/><stop offset="1" stop-color="#D3DFD6"/></linearGradient>
+    <radialGradient id="w-glow" cx=".5" cy=".42" r=".55"><stop offset="0" stop-color="#FFF4E8" stop-opacity=".95"/><stop offset="1" stop-color="#FFF4E8" stop-opacity="0"/></radialGradient>
+  </defs>
+  <!-- ceiling, walls, floor in one-point perspective; vanishing point (400,420) -->
+  <rect width="800" height="1000" fill="#F1EBE2"/>
+  <path d="M0 0 H800 L520 330 H280 Z" fill="#F7F2EB"/>
+  <path d="M0 0 L280 330 V560 L0 1000 Z" fill="#EEF3EF"/>
+  <path d="M800 0 L520 330 V560 L800 1000 Z" fill="#E8EFEA"/>
+  <path d="M0 1000 L280 560 H520 L800 1000 Z" fill="url(#w-floor)"/>
+  <!-- handrails -->
+  <path d="M0 640 L280 470" stroke="#C9B29C" stroke-width="8" stroke-linecap="round"/>
+  <path d="M800 640 L520 470" stroke="#C9B29C" stroke-width="8" stroke-linecap="round"/>
+  <!-- end window -->
+  <rect x="280" y="330" width="240" height="230" fill="url(#w-end)"/>
+  <rect x="320" y="360" width="160" height="150" rx="6" fill="#FFFBF5"/>
+  <rect x="397" y="360" width="6" height="150" fill="#F2E3D6"/>
+  <!-- ceiling lights -->
+  <path d="M330 40 h140 l-10 18 h-120 z" fill="#FFFDF8"/>
+  <path d="M362 190 h76 l-6 10 h-64 z" fill="#FFFDF8"/>
+  <path d="M384 270 h32 l-3 6 h-26 z" fill="#FFFDF8"/>
+  <!-- doors left -->
+  <path d="M70 140 L190 248 V640 L70 780 Z" fill="#D7E3DA"/>
+  <path d="M168 236 L180 247 V 470 L168 476 Z" fill="#B9CBBE"/>
+  <path d="M220 280 L262 318 V560 L220 610 Z" fill="#D7E3DA"/>
+  <!-- doors right -->
+  <path d="M730 140 L610 248 V640 L730 780 Z" fill="#CFDCD2"/>
+  <path d="M580 280 L538 318 V560 L580 610 Z" fill="#CFDCD2"/>
+  <!-- floor shine + center line -->
+  <path d="M340 560 H460 L560 1000 H240 Z" fill="#FFFFFF" opacity=".35"/>
+  <rect width="800" height="1000" fill="url(#w-glow)"/>
+  <!-- shadows -->
+  <ellipse cx="400" cy="930" rx="210" ry="26" fill="#2F3A34" opacity=".08"/>
+
+  <!-- elderly man (from behind), left -->
+  <g>
+    <path d="M300 760 L 296 910" stroke="#B9A58F" stroke-width="46" stroke-linecap="round"/>
+    <path d="M354 760 L 366 900" stroke="#B9A58F" stroke-width="46" stroke-linecap="round"/>
+    <path d="M272 912 h52 a12 12 0 0 1 12 12 v4 h-64 z" fill="#5B665F"/>
+    <path d="M346 902 h52 a12 12 0 0 1 12 12 v4 h-64 z" fill="#5B665F"/>
+    <path d="M262 780 Q 250 620 280 590 Q 320 566 360 576 Q 396 592 398 650 L 392 790 Z" fill="#7A9E87"/>
+    <path d="M326 572 v-24" stroke="#E0B293" stroke-width="34" stroke-linecap="round"/>
+    <circle cx="326" cy="516" r="48" fill="#E0B293"/>
+    <path d="M278 520 Q 276 470 326 466 Q 376 470 374 520 Q 370 548 326 552 Q 282 548 278 520 Z" fill="#E4E1DA"/>
+    <!-- cane arm (left) -->
+    <path d="M272 606 Q 244 680 236 756" stroke="#86A892" stroke-width="32" stroke-linecap="round" fill="none"/>
+    <circle cx="236" cy="764" r="15" fill="#E0B293"/>
+    <path d="M232 770 L 218 924" stroke="#8A6A52" stroke-width="7" stroke-linecap="round"/>
+    <path d="M220 752 q 4 -14 18 -10" stroke="#8A6A52" stroke-width="7" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- attendant (from behind), right, arm linked -->
+  <g>
+    <path d="M460 770 L 452 912" stroke="#4C705B" stroke-width="42" stroke-linecap="round"/>
+    <path d="M508 770 L 522 904" stroke="#4C705B" stroke-width="42" stroke-linecap="round"/>
+    <path d="M430 914 h48 a12 12 0 0 1 12 12 v4 h-60 z" fill="#2F3A34"/>
+    <path d="M502 906 h48 a12 12 0 0 1 12 12 v4 h-60 z" fill="#2F3A34"/>
+    <path d="M430 790 Q 420 640 448 606 Q 484 584 520 596 Q 548 616 546 670 L 540 800 Z" fill="#D99A7E"/>
+    <path d="M488 590 v-22" stroke="#B9805F" stroke-width="30" stroke-linecap="round"/>
+    <circle cx="488" cy="540" r="44" fill="#B9805F"/>
+    <path d="M444 540 Q 442 494 488 492 Q 534 494 532 540 Q 530 572 488 576 Q 446 572 444 540 Z" fill="#2F3A34"/>
+    <circle cx="488" cy="486" r="22" fill="#2F3A34"/>
+    <!-- arm across his back, hand on his arm -->
+    <path d="M448 626 Q 410 660 382 676" stroke="#C88A6E" stroke-width="28" stroke-linecap="round" fill="none"/>
+    <circle cx="378" cy="680" r="14" fill="#B9805F"/>
+    <path d="M542 626 Q 560 700 552 760" stroke="#C88A6E" stroke-width="28" stroke-linecap="round" fill="none"/>
+    <circle cx="552" cy="768" r="13" fill="#B9805F"/>
+  </g>
+</svg>
         </div>
         <div>
           <span class="eyebrow reveal">Why Families Trust Us</span>
