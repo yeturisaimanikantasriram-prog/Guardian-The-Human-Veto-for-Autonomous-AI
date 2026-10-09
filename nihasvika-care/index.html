@@ -817,9 +817,9 @@
         ];
         if (f.date.value) lines.push('Date: ' + f.date.value);
         if (f.message.value.trim()) lines.push('Message: ' + f.message.value.trim());
-        window.open('https://wa.me/' + form.dataset.whatsapp + '?text=' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
-        note.textContent = 'Thank you. WhatsApp is opening with your details.';
-        form.reset();
+        var url = 'https://wa.me/' + form.dataset.whatsapp + '?text=' + encodeURIComponent(lines.join('\n'));
+        var win = window.open(url, '_blank', 'noopener');
+        note.innerHTML = 'Thank you. If WhatsApp did not open, <a href="' + url + '" target="_blank" rel="noopener" style="text-decoration:underline">tap here to send your enquiry</a>.';
       });
     })();
   </script>
