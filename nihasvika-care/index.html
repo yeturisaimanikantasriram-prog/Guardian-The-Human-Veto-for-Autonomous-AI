@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nihasvika Care Service | Caregiver &amp; Hospital Attendant Services in Hyderabad</title>
+  <meta name="description" content="Trusted caregiver services in Hyderabad. Hospital attendants, elderly care and doctor-visit support in Kukatpally, Suchitra, Begumpet and Kompally. Book from just 3 hours.">
+  <meta name="theme-color" content="#FAF7F2">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nihasvika Care Service | Caregivers in Hyderabad">
+  <meta property="og:description" content="Caring for your loved ones, when you can't be there. Trusted hospital attendants and elderly care support across Hyderabad.">
+  <meta property="og:image" content="images/hero.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeHealthCareService",
+    "name": "Nihasvika Care Service",
+    "description": "Hospital attendants, patient care and elderly care support in Hyderabad.",
+    "telephone": "+91 90000 00000",
+    "address": { "@type": "PostalAddress", "addressLocality": "Hyderabad", "addressRegion": "Telangana", "addressCountry": "IN" },
+    "areaServed": ["Suchitra", "Kukatpally", "Begumpet", "Kompally", "Hyderabad"]
+  }
+  </script>
+
+  <style>
+    /* ---------- Tokens ---------- */
+    :root {
+      --bg: #FAF7F2;
+      --surface: #EEF3EF;
+      --sage: #7A9E87;
+      --sage-deep: #4C705B;   /* sage darkened for readable text */
+      --peach: #D99A7E;
+      --peach-soft: #F4E3DA;
+      --ink: #2F3A34;
+      --ink-soft: #5B665F;
+      --line: rgba(47, 58, 52, 0.10);
+      --white: #FFFFFF;
+
+      --radius: 24px;
+      --radius-sm: 16px;
+      --wrap: 1120px;
+      --gutter: clamp(20px, 5vw, 40px);
+      --section: clamp(88px, 14vw, 168px);
+      --ease: cubic-bezier(.22, .61, .36, 1);
+    }
+
+    /* ---------- Base ---------- */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 72px; -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    @media (min-width: 768px) { body { font-size: 18px; } }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    h1, h2, h3, p { margin: 0; }
+    :focus-visible { outline: 2px solid var(--sage-deep); outline-offset: 3px; border-radius: 8px; }
+
+    .wrap { width: 100%; max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
+    .section { padding: var(--section) 0; }
+    .tint { background: var(--surface); }
+    .center { text-align: center; }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--sage-deep);
+      margin-bottom: 18px;
+    }
+    .display {
+      font-weight: 300;
+      font-size: clamp(40px, 7.4vw, 88px);
+      line-height: 1.04;
+      letter-spacing: -0.035em;
+    }
+    .headline {
+      font-weight: 300;
+      font-size: clamp(34px, 5.2vw, 64px);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+    }
+    .lead {
+      font-size: clamp(18px, 2vw, 22px);
+      line-height: 1.5;
+      color: var(--ink-soft);
+      max-width: 34em;
+    }
+    .center .lead { margin-left: auto; margin-right: auto; }
+    .section-head { margin-bottom: clamp(48px, 7vw, 80px); }
+    .section-head .lead { margin-top: 20px; }
+
+    /* ---------- Buttons ---------- */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      min-height: 52px; padding: 0 28px;
+      border-radius: 999px; border: 0;
+      font: inherit; font-size: 17px; font-weight: 500;
+      cursor: pointer;
+      transition: transform .3s var(--ease), background-color .3s var(--ease), box-shadow .3s var(--ease);
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn svg { width: 20px; height: 20px; flex: none; }
+    .btn-primary { background: var(--peach); color: var(--ink); box-shadow: 0 8px 24px -10px rgba(217, 154, 126, .8); }
+    .btn-primary:hover { background: #DEA68C; }
+    .btn-secondary { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px rgba(47, 58, 52, .22); }
+    .btn-secondary:hover { background: rgba(47, 58, 52, .04); }
+    .btn-sage { background: var(--sage-deep); color: var(--white); }
+    .btn-sage:hover { background: #42634F; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 14px; }
+    .center .btn-row { justify-content: center; }
+
+    /* ---------- Icons ---------- */
+    .icon { width: 28px; height: 28px; stroke: var(--sage); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+
+    /* ---------- Photos (gradient shows until a real photo loads) ---------- */
+    .photo {
+      position: relative; overflow: hidden;
+      border-radius: var(--radius);
+      background:
+        radial-gradient(120% 90% at 15% 20%, rgba(217, 154, 126, .45), transparent 60%),
+        radial-gradient(110% 100% at 90% 85%, rgba(122, 158, 135, .55), transparent 60%),
+        linear-gradient(160deg, #F3ECE3, #E4ECE6);
+    }
+    .photo > svg { position: absolute; inset: 0; margin: auto; width: 22%; max-width: 120px; stroke: rgba(76, 112, 91, .55); fill: none; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
+    .photo img { position: relative; width: 100%; height: 100%; object-fit: cover; }
+
+    /* ---------- Navigation ---------- */
+    .nav {
+      position: fixed; inset: 0 0 auto 0; z-index: 50;
+      background: rgba(250, 247, 242, .72);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid transparent;
+      transition: border-color .3s var(--ease);
+    }
+    .nav.scrolled { border-bottom-color: var(--line); }
+    .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+    .wordmark { font-size: 19px; font-weight: 600; letter-spacing: -0.02em; }
+    .wordmark span { font-weight: 300; color: var(--sage-deep); }
+    .nav-links { display: none; gap: 36px; font-size: 15px; color: var(--ink-soft); }
+    .nav-links a { transition: color .2s; }
+    .nav-links a:hover { color: var(--ink); }
+    .nav .btn { min-height: 38px; padding: 0 18px; font-size: 15px; box-shadow: none; }
+    @media (min-width: 860px) { .nav-links { display: flex; } }
+
+    /* ---------- Hero ---------- */
+    .hero { padding-top: calc(60px + clamp(64px, 11vw, 128px)); padding-bottom: clamp(56px, 8vw, 96px); }
+    .hero .display { max-width: 13em; margin: 0 auto; }
+    .hero .lead { margin-top: 24px; }
+    .hero .btn-row { margin-top: 40px; }
+    .hero-photo { margin-top: clamp(56px, 8vw, 96px); aspect-ratio: 4 / 5; }
+    @media (min-width: 640px) { .hero-photo { aspect-ratio: 16 / 9; } }
+
+    /* ---------- Trust strip ---------- */
+    .trust { padding: clamp(40px, 6vw, 64px) 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .trust ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 20px clamp(24px, 6vw, 72px); }
+    .trust li { display: flex; align-items: center; gap: 12px; font-size: clamp(18px, 2.2vw, 22px); font-weight: 400; letter-spacing: -0.01em; }
+
+    /* ---------- Services ---------- */
+    .cards { display: grid; gap: 16px; grid-template-columns: 1fr; }
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: clamp(28px, 3.5vw, 40px);
+      display: flex; flex-direction: column; gap: 14px;
+      box-shadow: 0 1px 2px rgba(47, 58, 52, .04);
+      transition: transform .4s var(--ease), box-shadow .4s var(--ease);
+    }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 20px 40px -24px rgba(47, 58, 52, .25); }
+    .card .icon { width: 34px; height: 34px; margin-bottom: 18px; }
+    .card h3 { font-size: 21px; font-weight: 500; letter-spacing: -0.015em; line-height: 1.3; }
+    .card p { color: var(--ink-soft); font-size: 16px; }
+    @media (min-width: 640px) { .cards { grid-template-columns: repeat(2, 1fr); } .cards .card:last-child { grid-column: 1 / -1; } }
+    @media (min-width: 1000px) {
+      .cards { grid-template-columns: repeat(6, 1fr); }
+      .cards .card { grid-column: span 2; }
+      .cards .card:nth-child(n+4) { grid-column: span 3; }
+    }
+
+    /* ---------- Highlight ---------- */
+    .highlight .display { max-width: 11em; margin: 0 auto; }
+    .contact .headline { font-size: clamp(38px, 5.6vw, 68px); }
+    .highlight em { font-style: normal; color: var(--sage-deep); }
+    .highlight .lead { margin-top: 28px; }
+
+    /* ---------- How it works ---------- */
+    .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 48px; counter-reset: step; }
+    .step { position: relative; }
+    .step-num {
+      display: flex; align-items: center; justify-content: center;
+      width: 56px; height: 56px; border-radius: 50%;
+      background: var(--bg); box-shadow: inset 0 0 0 1px var(--sage);
+      color: var(--sage-deep); font-size: 18px; font-weight: 500;
+      margin-bottom: 28px; position: relative; z-index: 1;
+    }
+    .step h3 { font-size: clamp(22px, 2.6vw, 28px); font-weight: 400; letter-spacing: -0.02em; line-height: 1.25; margin-bottom: 10px; }
+    .step p { color: var(--ink-soft); }
+    @media (min-width: 860px) {
+      .steps { grid-template-columns: repeat(3, 1fr); gap: 40px; }
+      .step:not(:last-child)::after {
+        content: ""; position: absolute; top: 28px; left: 72px; right: -24px;
+        height: 1px; background: linear-gradient(90deg, var(--sage), rgba(122, 158, 135, .15));
+      }
+    }
+
+    /* ---------- Why families trust us ---------- */
+    .why { display: grid; gap: clamp(48px, 7vw, 96px); align-items: center; }
+    .why-photo { aspect-ratio: 4 / 5; }
+    .why-list { list-style: none; margin: 40px 0 0; padding: 0; display: grid; gap: 28px; }
+    .why-list li { display: flex; gap: 18px; }
+    .why-list h3 { font-size: 19px; font-weight: 500; letter-spacing: -0.01em; margin-bottom: 4px; }
+    .why-list p { color: var(--ink-soft); font-size: 16px; }
+    @media (min-width: 900px) { .why { grid-template-columns: 1fr 1fr; } }
+
+    /* ---------- Areas ---------- */
+    .map { position: relative; max-width: 760px; margin: 0 auto; aspect-ratio: 3 / 2; border-radius: var(--radius); background: var(--white); overflow: hidden; }
+    .map svg { width: 100%; height: 100%; }
+    .map .grid line { stroke: rgba(122, 158, 135, .14); stroke-width: 1; }
+    .map .route { stroke: rgba(122, 158, 135, .5); stroke-width: 1.2; fill: none; stroke-dasharray: 4 6; }
+    .map .halo { fill: rgba(122, 158, 135, .14); }
+    .map .dot { fill: var(--sage); }
+    .map text { font-family: inherit; font-size: 17px; font-weight: 500; fill: var(--ink); letter-spacing: -0.01em; }
+    @media (max-width: 559px) { .map { display: none; } .pills { margin-top: 0; } }
+    .pills { list-style: none; margin: 40px 0 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+    .pills li {
+      display: inline-flex; align-items: center; gap: 8px;
+      min-height: 48px; padding: 0 22px; border-radius: 999px;
+      background: var(--white); box-shadow: inset 0 0 0 1px var(--line);
+      font-size: 17px; font-weight: 500;
+    }
+    .pills .icon { width: 20px; height: 20px; }
+    .areas-note { margin-top: 28px; color: var(--ink-soft); font-size: 16px; }
+
+    /* ---------- Contact ---------- */
+    .contact { display: grid; gap: clamp(56px, 7vw, 96px); align-items: start; }
+    .phone-big {
+      display: inline-block; margin-top: 32px;
+      font-size: clamp(34px, 5vw, 52px); font-weight: 300; letter-spacing: -0.03em;
+      color: var(--sage-deep); border-bottom: 1px solid rgba(76, 112, 91, .3);
+      transition: border-color .3s;
+    }
+    .phone-big:hover { border-color: var(--sage-deep); }
+    .contact .lead { margin-top: 20px; }
+    .contact .btn-row { margin-top: 36px; }
+    .form { background: var(--white); border-radius: var(--radius); padding: clamp(28px, 4vw, 44px); display: grid; gap: 18px; }
+    .form h3 { font-size: 22px; font-weight: 500; letter-spacing: -0.015em; margin-bottom: 4px; }
+    .field { display: grid; gap: 8px; }
+    .field label { font-size: 14px; font-weight: 500; color: var(--ink-soft); }
+    .field input, .field select, .field textarea {
+      width: 100%; min-height: 52px; padding: 14px 16px;
+      font: inherit; font-size: 17px; color: var(--ink);
+      background: var(--bg); border: 1px solid transparent; border-radius: 14px;
+      transition: border-color .2s, background-color .2s;
+      -webkit-appearance: none; appearance: none;
+    }
+    .field select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%235B665F' stroke-width='1.5'%3E%3Cpath d='M1 1.5l5 5 5-5'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 18px center; padding-right: 44px;
+    }
+    .field textarea { min-height: 112px; resize: vertical; }
+    .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--sage); background: var(--white); }
+    .row-2 { display: grid; gap: 18px; }
+    @media (min-width: 560px) { .row-2 { grid-template-columns: 1fr 1fr; } }
+    .form .btn { width: 100%; margin-top: 6px; }
+    .form-note { font-size: 14px; color: var(--ink-soft); text-align: center; }
+    @media (min-width: 960px) { .contact { grid-template-columns: 1fr 1fr; } }
+
+    /* ---------- Footer ---------- */
+    .footer { padding: 64px 0 calc(40px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); font-size: 15px; color: var(--ink-soft); }
+    .footer-grid { display: grid; gap: 32px; }
+    .footer .wordmark { color: var(--ink); display: inline-block; margin-bottom: 8px; }
+    .footer h4 { margin: 0 0 8px; font-size: 13px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--ink); }
+    .footer a:hover { color: var(--ink); }
+    .copyright { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 13px; }
+    @media (min-width: 760px) { .footer-grid { grid-template-columns: 2fr 1fr 1fr; } }
+
+    /* ---------- Floating mobile buttons ---------- */
+    .fab {
+      position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 40;
+      display: flex; flex-direction: column; gap: 12px;
+      transition: opacity .4s var(--ease), transform .4s var(--ease);
+    }
+    .fab a {
+      display: flex; align-items: center; justify-content: center;
+      width: 56px; height: 56px; border-radius: 50%;
+      box-shadow: 0 10px 28px -8px rgba(47, 58, 52, .35);
+    }
+    .fab svg { width: 24px; height: 24px; }
+    .fab .fab-call { background: var(--peach); color: var(--ink); }
+    .fab .fab-wa { background: var(--sage-deep); color: var(--white); }
+    .fab.hidden { opacity: 0; transform: translateY(16px); pointer-events: none; }
+    @media (min-width: 860px) { .fab { display: none; } }
+
+    /* ---------- Scroll reveal ---------- */
+    .js .reveal { opacity: 0; transform: translateY(28px); transition: opacity 1s var(--ease), transform 1s var(--ease); }
+    .js .reveal.in { opacity: 1; transform: none; }
+    .js .reveal.d1 { transition-delay: .08s; }
+    .js .reveal.d2 { transition-delay: .16s; }
+    .js .reveal.d3 { transition-delay: .24s; }
+    .js .reveal.d4 { transition-delay: .32s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .reveal { opacity: 1; transform: none; transition: none; }
+      .btn, .card { transition: none; }
+    }
+  </style>
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+
+  <!-- Reusable line icons -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-9.2-9A4.8 4.8 0 0 1 12 6.6 4.8 4.8 0 0 1 21.2 11C19 15.6 12 20 12 20Z"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v5.5c0 4.2 3 7.7 7 9.5 4-1.8 7-5.3 7-9.5V6l-7-3Z"/><path d="m9 12 2.2 2.2L15.5 10"/></symbol>
+      <symbol id="i-badge" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.5"/><path d="m8.6 13.4-1.6 7.1 5-2.6 5 2.6-1.6-7.1"/></symbol>
+      <symbol id="i-hospital" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="17" rx="2"/><path d="M12 8v6M9 11h6M9 21v-3h6v3"/></symbol>
+      <symbol id="i-stethoscope" viewBox="0 0 24 24"><path d="M6 3v6a4 4 0 0 0 8 0V3"/><path d="M10 13v2a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></symbol>
+      <symbol id="i-hands" viewBox="0 0 24 24"><path d="M3 15l4-4c1-1 2.5-1 3.5 0L12 12.5"/><path d="M21 15l-4-4c-1-1-2.5-1-3.5 0L9 15.5a1.6 1.6 0 0 0 2.3 2.3L14 15"/><path d="M3 15l4.5 4.5c.8.8 2 .8 2.8 0L12 18M21 15l-4.5 4.5c-.8.8-2 .8-2.8 0"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+      <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M9 10h6M9 14h6M9 18h3"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.5 12h-2M21.5 12h-2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h3.5l1.7 4.3-2.2 1.4a11 11 0 0 0 6.3 6.3l1.4-2.2L20 15.5V19a1.5 1.5 0 0 1-1.6 1.5A16.5 16.5 0 0 1 3.5 5.6 1.5 1.5 0 0 1 5 4Z"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- 1. Navigation -->
+  <header class="nav" id="nav">
+    <nav class="wrap" aria-label="Main">
+      <a href="#top" class="wordmark" aria-label="Nihasvika Care, back to top">Nihasvika <span>Care</span></a>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#how">How It Works</a>
+        <a href="#areas">Areas</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a href="tel:+919000000000" class="btn btn-primary">Call Now</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- 2. Hero -->
+    <section class="hero center" aria-labelledby="hero-title">
+      <div class="wrap">
+        <h1 id="hero-title" class="display reveal">Caring for your loved ones, when you can't be there.</h1>
+        <p class="lead reveal d1">Trusted hospital attendants and elderly care support across Hyderabad.</p>
+        <div class="btn-row reveal d2">
+          <a href="tel:+919000000000" class="btn btn-primary">
+            <svg class="icon" style="stroke:currentColor" aria-hidden="true"><use href="#i-phone"/></svg>
+            Call Now
+          </a>
+          <a href="#services" class="btn btn-secondary">Our Services</a>
+        </div>
+        <div class="photo hero-photo reveal d3">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-hands"/></svg>
+          <img src="images/hero.jpg" alt="A caregiver gently holding the hand of an elderly woman at home" width="1600" height="900" fetchpriority="high" onerror="this.remove()">
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Trust strip -->
+    <section class="trust" aria-label="Our promise">
+      <div class="wrap">
+        <ul>
+          <li class="reveal"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg>Caring</li>
+          <li class="reveal d1"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>Reliable</li>
+          <li class="reveal d2"><svg class="icon" aria-hidden="true"><use href="#i-badge"/></svg>Professional</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. Services -->
+    <section class="section tint" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-head center">
+          <span class="eyebrow reveal">Services</span>
+          <h2 id="services-title" class="headline reveal d1">Support for every step of care.</h2>
+        </div>
+        <div class="cards">
+          <article class="card reveal">
+            <svg class="icon" aria-hidden="true"><use href="#i-hospital"/></svg>
+            <h3>Hospital &amp; Patient Attendant Services</h3>
+            <p>A dedicated attendant by your loved one's side during a hospital stay.</p>
+          </article>
+          <article class="card reveal d1">
+            <svg class="icon" aria-hidden="true"><use href="#i-stethoscope"/></svg>
+            <h3>Hospital Visits &amp; Doctor Appointments</h3>
+            <p>We accompany them to appointments and make sure nothing is missed.</p>
+          </article>
+          <article class="card reveal d2">
+            <svg class="icon" aria-hidden="true"><use href="#i-hands"/></svg>
+            <h3>Patient &amp; Elderly Care Support</h3>
+            <p>Gentle, everyday help with comfort, meals and mobility.</p>
+          </article>
+          <article class="card reveal">
+            <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
+            <h3>Short-Term Attendant (3 hours or more)</h3>
+            <p>Book help for just a few hours, exactly when you need it.</p>
+          </article>
+          <article class="card reveal d1">
+            <svg class="icon" aria-hidden="true"><use href="#i-clipboard"/></svg>
+            <h3>Assistance during Tests, Consultations &amp; Hospital Visits</h3>
+            <p>A calm companion through queues, tests and paperwork.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Highlight -->
+    <section class="section highlight center" aria-labelledby="flex-title">
+      <div class="wrap">
+        <h2 id="flex-title" class="display reveal d1">Flexible care, starting from just <em>3&nbsp;hours.</em></h2>
+        <p class="lead reveal d2">Book an attendant for a single appointment, a full day, or as long as you need. You choose the time. We take care of the rest.</p>
+      </div>
+    </section>
+
+    <!-- 6. How it works -->
+    <section class="section tint" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <div class="section-head center">
+          <span class="eyebrow reveal">How It Works</span>
+          <h2 id="how-title" class="headline reveal d1">Simple. From your first call.</h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <div class="step-num" aria-hidden="true">1</div>
+            <h3>Call us</h3>
+            <p>Speak to us by phone or WhatsApp. We're here to listen.</p>
+          </li>
+          <li class="step reveal d1">
+            <div class="step-num" aria-hidden="true">2</div>
+            <h3>Tell us your need</h3>
+            <p>Share the date, the place and the kind of help required.</p>
+          </li>
+          <li class="step reveal d2">
+            <div class="step-num" aria-hidden="true">3</div>
+            <h3>A trusted attendant accompanies your loved one</h3>
+            <p>They arrive on time and stay by their side throughout.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 7. Why families trust us -->
+    <section class="section" aria-labelledby="why-title">
+      <div class="wrap why">
+        <div class="photo why-photo reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"/></svg>
+          <img src="images/care.jpg" alt="An attendant walking alongside an elderly man in a hospital corridor" width="1000" height="1250" loading="lazy" onerror="this.remove()">
+        </div>
+        <div>
+          <span class="eyebrow reveal">Why Families Trust Us</span>
+          <h2 id="why-title" class="headline reveal d1">Peace of mind, wherever you are.</h2>
+          <ul class="why-list">
+            <li class="reveal d1">
+              <svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg>
+              <div><h3>Compassionate attendants</h3><p>Kind people who treat your family like their own.</p></div>
+            </li>
+            <li class="reveal d2">
+              <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
+              <div><h3>Punctual and dependable</h3><p>On time, every time, so you never have to worry.</p></div>
+            </li>
+            <li class="reveal d3">
+              <svg class="icon" aria-hidden="true"><use href="#i-sun"/></svg>
+              <div><h3>Respectful care for elders</h3><p>Patience, dignity and a warm presence.</p></div>
+            </li>
+            <li class="reveal d4">
+              <svg class="icon" aria-hidden="true"><use href="#i-hospital"/></svg>
+              <div><h3>Support during hospital visits</h3><p>A steady hand when days feel long and busy.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Service areas -->
+    <section class="section tint" id="areas" aria-labelledby="areas-title">
+      <div class="wrap center">
+        <div class="section-head">
+          <span class="eyebrow reveal">Service Areas</span>
+          <h2 id="areas-title" class="headline reveal d1">Close to home, across Hyderabad.</h2>
+        </div>
+        <div class="map reveal d1" role="img" aria-label="Map showing our service areas: Kompally, Suchitra, Kukatpally and Begumpet">
+          <svg viewBox="0 0 600 400" aria-hidden="true">
+            <g class="grid">
+              <line x1="0" y1="80" x2="600" y2="80"/><line x1="0" y1="160" x2="600" y2="160"/>
+              <line x1="0" y1="240" x2="600" y2="240"/><line x1="0" y1="320" x2="600" y2="320"/>
+              <line x1="100" y1="0" x2="100" y2="400"/><line x1="200" y1="0" x2="200" y2="400"/>
+              <line x1="300" y1="0" x2="300" y2="400"/><line x1="400" y1="0" x2="400" y2="400"/>
+              <line x1="500" y1="0" x2="500" y2="400"/>
+            </g>
+            <path class="route" d="M440 70 Q 420 110 400 140 Q 260 150 150 190 Q 250 260 400 320 Q 420 220 400 140"/>
+            <g>
+              <circle class="halo" cx="440" cy="70" r="22"/><circle class="dot" cx="440" cy="70" r="6"/>
+              <text x="470" y="76">Kompally</text>
+            </g>
+            <g>
+              <circle class="halo" cx="400" cy="140" r="22"/><circle class="dot" cx="400" cy="140" r="6"/>
+              <text x="430" y="146">Suchitra</text>
+            </g>
+            <g>
+              <circle class="halo" cx="150" cy="190" r="22"/><circle class="dot" cx="150" cy="190" r="6"/>
+              <text x="150" y="236" text-anchor="middle">Kukatpally</text>
+            </g>
+            <g>
+              <circle class="halo" cx="400" cy="320" r="22"/><circle class="dot" cx="400" cy="320" r="6"/>
+              <text x="430" y="326">Begumpet</text>
+            </g>
+          </svg>
+        </div>
+        <ul class="pills">
+          <li class="reveal"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Suchitra</li>
+          <li class="reveal d1"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Kukatpally</li>
+          <li class="reveal d2"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Begumpet</li>
+          <li class="reveal d3"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Kompally</li>
+        </ul>
+        <p class="areas-note reveal">Nearby? Give us a call. We'll always try to help.</p>
+      </div>
+    </section>
+
+    <!-- 9. Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact">
+        <div>
+          <span class="eyebrow reveal">Contact</span>
+          <h2 id="contact-title" class="headline reveal d1">Need someone you can trust?</h2>
+          <p class="lead reveal d2">Call or message us. We'll understand your needs and arrange the right attendant.</p>
+          <a href="tel:+919000000000" class="phone-big reveal d2">+91 90000 00000</a>
+          <div class="btn-row reveal d3">
+            <a href="tel:+919000000000" class="btn btn-primary">
+              <svg class="icon" style="stroke:currentColor" aria-hidden="true"><use href="#i-phone"/></svg>
+              Call Now
+            </a>
+            <a href="https://wa.me/919000000000" class="btn btn-sage" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <form class="form reveal d2" id="enquiry" data-whatsapp="919000000000" novalidate>
+          <h3>Send an enquiry</h3>
+          <div class="field">
+            <label for="f-name">Your name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="row-2">
+            <div class="field">
+              <label for="f-phone">Phone</label>
+              <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required>
+            </div>
+            <div class="field">
+              <label for="f-date">Date</label>
+              <input id="f-date" name="date" type="date">
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-service">Service needed</label>
+            <select id="f-service" name="service">
+              <option>Hospital &amp; Patient Attendant</option>
+              <option>Hospital Visit / Doctor Appointment</option>
+              <option>Patient &amp; Elderly Care Support</option>
+              <option>Short-Term Attendant (3+ hours)</option>
+              <option>Tests &amp; Consultations Assistance</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-message">Message</label>
+            <textarea id="f-message" name="message" placeholder="Tell us a little about your loved one's needs"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Enquiry</button>
+          <p class="form-note" id="form-note" role="status" aria-live="polite">We usually reply within the hour.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 10. Footer -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <span class="wordmark">Nihasvika <span>Care</span></span>
+          <p>Caring for Your Loved Ones When You Can't Be There.</p>
+        </div>
+        <div>
+          <h4>Areas</h4>
+          <p>Suchitra · Kukatpally<br>Begumpet · Kompally</p>
+        </div>
+        <div>
+          <h4>Call</h4>
+          <p><a href="tel:+919000000000">+91 90000 00000</a></p>
+        </div>
+      </div>
+      <p class="copyright">© <span id="year">2026</span> Nihasvika Care Service, Hyderabad. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating buttons (mobile only) -->
+  <div class="fab hidden" id="fab">
+    <a href="https://wa.me/919000000000" class="fab-wa" target="_blank" rel="noopener" aria-label="Message us on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+    </a>
+    <a href="tel:+919000000000" class="fab-call" aria-label="Call Nihasvika Care">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-phone"/></svg>
+    </a>
+  </div>
+
+  <script>
+    (function () {
+      // Year
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Nav border + floating buttons after the hero
+      var nav = document.getElementById('nav');
+      var fab = document.getElementById('fab');
+      var contact = document.getElementById('contact');
+      function onScroll() {
+        var y = window.scrollY;
+        nav.classList.toggle('scrolled', y > 8);
+        var nearContact = contact.getBoundingClientRect().top < window.innerHeight * 0.6;
+        fab.classList.toggle('hidden', y < window.innerHeight * 0.6 || nearContact);
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // Scroll reveal
+      var items = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+          });
+        }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+        items.forEach(function (el) { io.observe(el); });
+      } else {
+        items.forEach(function (el) { el.classList.add('in'); });
+      }
+
+      // Date: no past dates
+      var date = document.getElementById('f-date');
+      date.min = new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+
+      // Enquiry form: opens WhatsApp with the details filled in
+      var form = document.getElementById('enquiry');
+      var f = form.elements;
+      var note = document.getElementById('form-note');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var name = f.name.value.trim();
+        var phone = f.phone.value.trim();
+        if (!name || phone.replace(/\D/g, '').length < 10) {
+          note.textContent = 'Please add your name and a 10-digit phone number.';
+          (name ? f.phone : f.name).focus();
+          return;
+        }
+        var lines = [
+          'Hello Nihasvika Care, I would like to enquire.',
+          'Name: ' + name,
+          'Phone: ' + phone,
+          'Service: ' + f.service.value
+        ];
+        if (f.date.value) lines.push('Date: ' + f.date.value);
+        if (f.message.value.trim()) lines.push('Message: ' + f.message.value.trim());
+        window.open('https://wa.me/' + form.dataset.whatsapp + '?text=' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
+        note.textContent = 'Thank you. WhatsApp is opening with your details.';
+        form.reset();
+      });
+    })();
+  </script>
+</body>
+</html>
